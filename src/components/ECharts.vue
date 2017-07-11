@@ -105,9 +105,9 @@ export default {
     }
   },
   methods: {
-    // provide a explicit merge option method
-    mergeOptions (options) {
-      this._delegateMethod('setOption', options)
+    // provide a explicit set option method
+    setOptions (options) {
+      this._delegateMethod('setOption', options, true)
     },
     // just delegates ECharts methods to Vue component
     // use explicit params to reduce transpiled size for now

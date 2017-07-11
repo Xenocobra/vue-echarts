@@ -14,7 +14,7 @@ Just download `dist/vue-echarts.js` and include it in your HTML file:
 <script src="path/to/vue-echarts/dist/vue-echarts.js"></script>
 ```
 
-### npm 
+### npm
 
 ```bash
 $ npm install vue-echarts
@@ -198,7 +198,7 @@ See more examples [here](https://github.com/Justineo/vue-echarts/tree/master/dem
 
 * `options` **[reactive]**
 
-  Used to update data for ECharts instance. Modifying this property will trigger ECharts' `setOption` method.
+  Used to update data for ECharts instance. Modifying this property will trigger ECharts' `setOption` (merge) method.
 
 * `group` **[reactive]**
 
@@ -210,9 +210,9 @@ See more examples [here](https://github.com/Justineo/vue-echarts/tree/master/dem
 
 ### Instance Methods
 
-* `mergeOptions` (`setOption` in ECharts)
+* `setOptions` (`setOption` in ECharts)
 
-  *Providing a better method name to describe the actual behavior of `setOption.`*
+  *This will override the options rather than perform a merge*
 
 * `resize`
 * `dispatchAction`

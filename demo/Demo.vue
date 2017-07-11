@@ -333,7 +333,7 @@ export default {
         if (this.seconds === 0) {
           clearTimeout(timer)
           bar.hideLoading()
-          bar.mergeOptions(barAsync)
+          this.bar = barAsync
         }
       }, 1000)
     },
